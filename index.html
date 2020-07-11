@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+        integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <title>Prognoza pogody</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Prognoza pogody</h1> 
+        <h2 id="cityName" style="display:none;"></h2>
+        <div>
+            <input type="text" placeholder="Podaj lokalizacje" id="city" />
+            <button onclick="getWeather()">Sprawdź</button>
+        </div>
+
+        <div id="forecastRes" class="mt-5">
+            <table class="table">
+                <thead>
+                    <tr id="forecastDate">
+                        <th scope="row">Data/godzina</th>
+                    </tr>
+                </thead>
+                <tbody id="weatherData">
+                    <tr id="temp">
+                        <th scope="row">Temperatura</th>
+                    </tr>
+                    <tr id="icon">
+                        <th scope="row">Pogoda</th>
+                    </tr>
+                    <tr id="description">
+                        <th scope="row">Opis</th>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+
+    <script src="./script.js"></script>
+</body>
+
+</html>
